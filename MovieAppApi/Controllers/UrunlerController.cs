@@ -14,6 +14,7 @@ namespace AngularExampleAPI.Controllers
         {
             _angularExampleDbContext = angularExampleDbContext;
         }
+
         [HttpGet]
         public async Task<IActionResult> GetAllUrunler()
         {
@@ -80,6 +81,5 @@ namespace AngularExampleAPI.Controllers
 
             return Ok(product);
         }
-
     }
 }
